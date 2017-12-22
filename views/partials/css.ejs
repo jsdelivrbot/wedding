@@ -132,11 +132,24 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
+  @media screen and (min-width: 721px) {
+    .nav-bar-mobile{
+      display:none;
+    }
+    .nav-bar-desktop{
+      display:inline;
+    }
+  }
   @media screen and (max-width: 720px) {
     .cover-image-container{
       max-width: 90%;
       margin: auto;
+    }
+    .nav-bar-mobile{
+      display:inline;
+    }
+    .nav-bar-desktop{
+      display:none;
     }
   }
 
