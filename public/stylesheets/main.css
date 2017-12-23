@@ -25,3 +25,11 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+@font-face {
+    font-family: 'rolling_pen_basic_tworegular';
+    src: url('rolling_pen_basic_two-webfont.woff2') format('woff2'),
+         url('rolling_pen_basic_two-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
