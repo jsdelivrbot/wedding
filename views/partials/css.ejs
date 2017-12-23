@@ -25,6 +25,7 @@
     padding-top: 100px;
     z-index: 1000;
     width: 100%;
+    padding-bottom: 40px;
   }
   .navbar-wedding.affix{
     position: fixed;
@@ -32,6 +33,7 @@
     padding-top: 5px;
     background-color: #5d545d;
     transition: all 0.6s linear;
+    max-height: 120px;
   }
   .navbar-wedding .container {
     margin: auto;
@@ -41,9 +43,10 @@
   .nav-item,
   a.nav-item:visited {
     font-weight: bold;
-    padding: 20px 10px;
+    padding: 10px;
     color: #FFFFFF;
     text-decoration: none;
+    display: inline-table;
   }
   a.nav-item:hover,
   a.nav-item:active,
@@ -282,6 +285,9 @@
     #wedding-title,
     #ceremony-reception-title{
       font-size:4rem;
+    }
+    .navbar-wedding {
+      padding-bottom: 0px;
     }
   }
 
