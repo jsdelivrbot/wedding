@@ -24,7 +24,6 @@
 <meta property="og:url"                content="http://www.chrisandalicia.us<%= page %>" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="
-
 <% if (page == '/our-story') { %>
     Our Story
 <% } else if (page == '/our-photos') { %>
@@ -36,10 +35,20 @@
 <% } else { %>
      I love you and I like you.
 <% } %> | Chris & Alicia"
-
-
  />
-<meta property="og:description"        content="&quot;We could just say screw it and do this thing for real. I miss you like crazy. I think about you all the time. I want to be with you. So let’s just say screw it. I know how I feel and I want to be with you.&quot; - Leslie Knope" />
+<meta property="og:description"        content="
+<% if (page == '/our-story') { %>
+    &quot;And, a lot of people told me I was crazy to wait this long for a date with a girl I work with but I think, even then I knew that I was waiting for my wife.&quot; - Jim Halpert
+<% } else if (page == '/our-photos') { %>
+    &quot;After all this time?&quot; &quot;Always.&quot;
+<% } else if (page == '/accommodations') { %>
+    &quot; Because thats what people do...they leap and hope to God they can fly! And there's only one person that makes me feel like I can fly.&quot; - Will Smith's cinematic classic Hitch
+<% } else if (page == '/rsvp') { %>
+    &quot;Whenever something funny happens, I always want to tell you about it.&quot; - Miranda Hobbes
+<% } else { %>
+     &quot;We could just say screw it and do this thing for real. I miss you like crazy. I think about you all the time. I want to be with you. So let’s just say screw it. I know how I feel and I want to be with you.&quot; - Leslie Knope
+<% } %>
+" />
 <meta property="og:image"              content="http://res.cloudinary.com/huttle/image/upload/v1513885289/19955968_10211289959578281_697706757202493947_o_bvjern.jpg" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86695829-1"></script>
