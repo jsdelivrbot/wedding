@@ -1,4 +1,18 @@
-<title>Chris & Alicia | I love you and I like you.</title>
+<title>Chris & Alicia |
+  <% if (page == '/our-story') { %>
+      Our Story
+  <% } else if (page == '/our-photos') { %>
+      Our Photos
+  <% } else if (page == '/accommodations') { %>
+      Accommodations
+  <% } else if (page == '/rsvp') { %>
+      RSVP
+  <% } else { %>
+       I love you and I like you.
+  <% } %>
+</title>
+
+
 <link rel="shortcut icon" href="http://res.cloudinary.com/huttle/image/upload/v1513959668/favicon_yy0ufa.ico" type="image/x-icon">
 <link rel="icon" href="http://res.cloudinary.com/huttle/image/upload/v1513959668/favicon_yy0ufa.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
