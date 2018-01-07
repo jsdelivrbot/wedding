@@ -29,9 +29,9 @@ express()
     page: req.url })) */
   .get('/our-photos', (req, res) => {
     var items = getImages();
-    console.log(items);
-  res.render('pages/photos-revamp', {page: req.url, imagesArray: items})
-    //res.render('pages/photos', {page: req.url})
+
+    // res.render('pages/photos-revamp', {page: req.url, imagesArray: items})
+    res.render('pages/photos', {page: req.url})
   })
   .get('*', (req, res) => res.render('pages/error', {
     page: req.url }))
