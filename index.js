@@ -9,6 +9,7 @@ function getImages() {
   var imagePath = '/' + sourceUrl[1] + '/' + sourceUrl[2] + '/' + sourceUrl[3] + '/public/images'
   var items = fs.readdirSync(imagePath);
 
+
   return items;
 
 }
@@ -28,10 +29,10 @@ express()
   /* .get('/our-photos', (req, res) => res.render('pages/photos', {
     page: req.url })) */
   .get('/our-photos', (req, res) => {
-    // var items = getImages();
+    var items = getImages().slice(1);
 
-    // res.render('pages/photos-revamp', {page: req.url, imagesArray: items})
-    res.render('pages/photos-old', {page: req.url})
+    res.render('pages/photos-revamp', {page: req.url, imagesArray: items})
+    // res.render('pages/photos-old', {page: req.url})
   })
   .get('*', (req, res) => res.render('pages/error', {
     page: req.url }))
