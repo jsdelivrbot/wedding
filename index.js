@@ -29,18 +29,18 @@ express()
   /* .get('/our-photos', (req, res) => res.render('pages/photos', {
     page: req.url })) */
   .get('/our-photos', (req, res) => {
-    var items = getImages().slice(1);
+//    var items = getImages().slice(1);
 
-    res.render('pages/photos-revamp', {page: req.url, imagesArray: items}, function(err, html) {
+  /*  res.render('pages/photos-revamp', {page: req.url, imagesArray: items}, function(err, html) {
       if(err) {
           res.redirect('/404'); // File doesn't exist
       } else {
           res.send(html);
           console.log('all good');
       }
-    })
+    }) */
 
-    // res.render('pages/photos-old', {page: req.url})
+    res.render('pages/photos-old', {page: req.url})
   })
   .get('*', (req, res) => res.render('pages/error', {
     page: req.url }))
