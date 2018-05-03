@@ -128,23 +128,6 @@ h1 {
   margin: auto;
 }
 
-// sponsored post
-.sponsored-posts{
-  min-height: 100vh;
-  background-color: #FFFFFF;
-  padding: 50px;
-}
-.sponsored-posts h3.aboutWhatHead {
-  padding-bottom: 0px;
-}
-
-// terms page
-.terms-container{
-  padding: 20px;
-  background-color: #FFFFFF;
-
-}
-
 #response{
   color: #555 !important;
   text-align: center !important;
