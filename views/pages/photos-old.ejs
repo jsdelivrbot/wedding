@@ -138,6 +138,17 @@
         </div>
       </div>
     </div>
+    <!-- BEGIN ENGAGEMENT LOOP -->
+    <% for (var i = 0; i < imagesArray.length; i++) { %>
+      <div class="col-sm-4">
+        <div class="photos-image-container">
+          <div class="photos-cover-image">
+              <img class="cover-image-item" src="images/engagement/<%= imagesArray[i] %>">
+          </div>
+        </div>
+      </div>
+     <% } %>
+     <!-- END ENGAGEMENT LOOP -->
   </div>
     <% include ../partials/footer.ejs %>
 </div>
