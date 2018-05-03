@@ -4,8 +4,6 @@ const PORT = process.env.PORT || 5000
 
 function getImages() {
   var fs = require('fs');
-  var sourceUrl = process.argv[1].split("/")
-
   var imagePath = 'public/images/engagement'
   var items = fs.readdirSync(imagePath);
 
